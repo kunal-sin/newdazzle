@@ -1,0 +1,16 @@
+/* Mixin for p <tag> */
+
+
+@mixin p-tag-style {
+
+	text-align: center;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 15px;
+    margin: 5px;
+    padding: 0 25px;
+    color: $light-grey;
+    font-family: 'Playfair Display', serif;
+}
+
+

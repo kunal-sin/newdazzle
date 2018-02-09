@@ -1,0 +1,1075 @@
+
+@import "partials/variables";
+@import "partials/mixins";
+
+html{
+    width: 100%;
+}
+
+body{
+    width: 100%;
+    margin:auto;
+    background-color: $body-color;
+    overflow-x: hidden;
+
+}
+
+/*Slick Styling*/
+
+#offer-container, #client-container{
+    
+    .slick-prev{
+        left: 0;
+        z-index: 1000;
+    }
+
+    .slick-next{
+        right: 17px;
+        z-index: 1000;
+    }
+
+    .slick-prev:before, .slick-next:before{
+        font-size: 40px;
+        color: #999;
+    }
+}
+
+.slick-prev{
+    left: 0;
+}
+.slick-next{
+    right: 17px;
+}
+
+.slick-prev.slick-next{
+    z-index: 1000;
+}
+
+.slick-prev:before, .slick-next:before{
+    font-size: 40px;
+    color: #afabab;
+}
+
+
+
+
+#fixed-icon{
+    background-color: #333;
+    height: 35px;
+    width: 35px;
+    position: fixed;
+    z-index: 10;
+    margin-top: 320px;
+
+    a
+    {
+        cursor: pointer;
+        i{
+            font-size: 40px;
+            color: white;
+        }
+    }
+}
+
+.triangle-left {
+  width: 0;
+  height: 0;
+  position: absolute;
+  right: 0;
+  margin-top: 100px;
+  border-top: 30px solid transparent;
+  border-bottom: 30px solid transparent;
+
+  border-right:30px solid $white;
+}
+
+.triangle-right {
+  width: 0;
+  height: 0;
+  margin-top: 100px;
+  position: absolute;
+  border-top: 30px solid transparent;
+  border-bottom: 30px solid transparent;
+
+  border-left: 30px solid $white;
+}
+
+.triangle-up {
+  width: 0;
+  height: 0;
+  position: absolute;
+  margin-left: 40%;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+
+  border-bottom: 30px solid $white;
+  bottom: 0;
+}
+
+.triangle-down {
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 0;
+  margin-left: 40%;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+
+  border-top: 30px solid $white;
+}
+
+.no-padding{
+    padding: 0;
+}
+
+.upper-margin{
+    margin-top: 100px;
+}
+/* Header */
+
+.navbar-nav.navbar-center {
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+}
+
+#header{
+    border-radius: 0px;
+    height: 86px;
+    background-color: $white;
+    border: none;
+    margin-bottom: 0;
+
+    #myNavbar{
+        padding: 10px 0;
+        border-color: $white;
+
+        ul{
+            li{
+                &:hover{
+
+                    a{
+                        color: black;
+                    }
+                    border-bottom: 1px solid $nav-hover;
+                }
+
+                a{
+                    &:focus{
+                        color:black;
+                    }
+                }
+
+            }
+        }
+    }
+
+    #nav-button{
+        background-color: #333;
+        margin: 20px;
+
+    }
+}
+
+/* Header End */
+
+/* Image Section Start */
+
+#image-wrapper{
+
+     padding: 0;
+    .pic-section
+    {
+        background: linear-gradient(to bottom,rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(../images/blog1.png);
+        width: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+
+    }
+
+
+
+    #section-logo{
+            padding: 80px 0;
+            img{
+                margin: 0px 20px 20px 20px;
+            }
+
+            h3{
+                color: $white;
+                font-weight: 700;
+            }
+            h1{
+              font-family: 'Playfair Display', serif;
+              color: #ffffff;
+              margin-top: 20px;
+              font-size: 72px;
+              font-weight: 900;
+              font-style: italic;
+              line-height: 1;
+              text-align: center;
+            }
+
+        }
+    }
+
+    .butn
+    {
+        font-weight: bold;
+        border-width: 0.25px;
+        border-color: #000000;
+        width: 140px;
+        height: 48px;
+        color: #ffffff;
+        font-family: Lato;
+        margin-top: 50px;
+        border-style: solid;
+        background-color: #ead2ac;
+        border-radius: 4px;
+        font-size: 16px;
+        outline: none;
+        transition-duration: 0.8s;
+        &:hover{
+            background-color:#e4bb70;
+            transition-duration: 0.5s;
+        }
+    }
+/* Image Section End */
+
+/* Written Section Start */
+
+    #special{
+
+            letter-spacing: 8px;
+            font-weight: 700;
+            word-spacing: 6px;
+    }
+
+    #written-section{
+
+        p{
+
+            @include p-tag-style;
+            margin-top: 30px;
+            font-size: 17px;
+            font-weight: 600;
+
+        }
+
+    .offer{
+        background-color: $white;
+        margin: 10px 20px;
+        width: 340px;
+        align-content: center;
+        display: inline-block;
+        /* float: left; */
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+        img{
+            margin-top: 20px;
+            padding: 10px;
+            width: 240px;
+            height: 240px;
+        }
+
+        p{
+            text-align: center;
+            font-weight: 550;
+            font-style: italic;
+            font-size: 15px;
+            margin: 5px 5px;
+            padding: 0 25px;
+            color: $light-grey;
+            font-family: 'Playfair Display', serif;
+        }
+
+        h3{
+            text-align: center;
+            font-weight: bold;
+            font-size: 24px;
+            margin: 25px 5px;
+            padding: 0 5px;
+            font-family: serif;
+        }
+
+        h2{
+            text-align: center;
+            font-weight: 600;
+            font-size: 30px;
+            margin: 25px 10px 0;
+            padding: 0 5px;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .offer-butn
+            {
+              font-weight: bold;
+              border-width: 0.25px;
+              border-color: #000000;
+              width: 180px;
+              height: 48px;
+              color: #ffffff;
+              font-family: Lato;
+              margin: 30px 0;
+              border-style: solid;
+              background-color: #ead2ac;
+              border-radius: 4px;
+              font-size: 16px;
+
+              outline: none;
+              transition-duration: 0.8s;
+              &:hover{
+                background-color:#e4bb70;
+                transition-duration: 0.5s;
+                }
+            }
+    }
+
+    #offer-container{
+        margin-top: 70px;
+        align-content: center;
+        padding:0;
+
+        a{
+            color: #8e9398;
+            float: left;
+        }
+    }
+}
+
+/* Written Section End */
+
+/* New Product Section Start */
+
+#new-product-container
+{
+
+    background: url(../images/parallax-01.jpg);
+    width: 100%;
+    height: 660px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    #border-section
+    {
+      margin-top: 100px;
+      width: 100%;
+      height: 450px;
+      border: 30px solid white;
+      padding-bottom: 100px;
+
+      h3
+      {
+        color: #ffffff;
+        font-size: 18px;
+        word-spacing: 5px;
+        letter-spacing: 3px;
+        font-weight: bolder;
+        margin-top: 50px;
+      }
+
+      h1
+      {
+              font-family: 'Playfair Display', serif;
+              color: #ffffff;
+              font-size: 72px;
+              letter-spacing: 5px;
+              font-weight: 900;
+              font-style: italic;
+              line-height: 1;
+              text-align: center;
+      }
+    }
+}
+
+/* New Product End */
+
+
+/* Jewellery Nav Start */
+
+
+#jewellery-nav {
+  width: 100%;
+  float: left;
+  margin: 20px 0;
+
+  ul {
+    margin-top: 10px;
+    align-content: center;
+
+    li {
+      padding: 12px;
+      display: inline;
+      margin: 0;
+      a {
+        color: #d9d9d9;
+        font-weight: bold;
+        text-decoration: none;
+
+        &:hover{
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+      }
+      &:hover {
+        color: black;
+        border-bottom: 2px solid  #ead2ac;
+      }
+    }
+    .active
+    {
+        border-bottom: 1px solid $nav-hover;
+        a{
+            color: black;
+        }
+    }
+  }
+}
+
+.jewellery-nav-section {
+
+    margin-top: 20px;
+    box-shadow: 5px 5px 10px grey;
+    display: flex;
+    background-color: $white;
+
+}
+
+.jewellery-nav-section-container {
+  position: absolute;
+  width: 100%;
+  height: 500px;
+}
+
+.jewellery-nav-section-img {
+  width: 100%;
+  img {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.jewellery-nav-section-info {
+  background-color: white;
+  height: 100%;
+  h5 {
+    margin: 0;
+    color: #9999998a;
+    padding-top: 80px;
+    font-weight: bold;
+  }
+  h1 {
+    font-family: PlayfairDisplay;
+    font-size: 32px;
+    font-weight: 700;
+    font-style: italic;
+    line-height: 32px;
+    text-align: center;
+    padding-bottom: 10px;
+  }
+  p {
+    padding: 10px 25px;
+    font-size: 14px;
+    color: #9999998a;
+    font-weight: bold;
+  }
+}
+
+
+.hide{
+    display: none;
+}
+
+
+
+/* Jewellery Section End */
+
+/* Item Section Start */
+
+
+#item-section{
+
+    /* padding: 0; */
+    .col-md-6{
+        padding: 0;
+    }
+    max-width: 1400px;
+    #item-image{
+        width: 50%;
+        padding: 0;
+
+        img{
+            width:100%;
+            height: 240px;
+        }
+    }
+
+    #item-info{
+
+        width: 50%;
+        height: 240px;
+        background-color: $white;
+    }
+
+    #item-info-container{
+        padding-top: 25px;
+        text-align: justify;
+
+        h4{
+            font-family: 'PlayfairDisplay';
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        #icons{
+            margin-top: 15px;
+            padding: 0;
+
+            i{
+                margin-right: 2px;
+            }
+        }
+
+        a{
+            font-family: Lato;
+            color: $red;
+            display: inline-block;
+            font-weight: bold;
+            font-size: 12px;
+
+            &:hover{
+                text-decoration: none;
+            }
+        }
+
+        p {
+          font-family: Lato;
+          font-weight: bold;
+          color: #8e8b8be0;
+          float: left;
+          width: 95%;
+        }
+
+
+    }
+
+
+}
+
+/* Item Section End */
+
+
+/* Client Section Start */
+
+    #client-container{
+        margin-top: 70px;
+        align-content: center;
+        padding:0;
+    }
+
+    .client{
+        background-color: $white;
+        margin: 20px 20px;
+        width: 340px;
+        align-content: center;
+        display: inline-block;
+        /* float: left; */
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+        .client-img{
+
+            margin-top: 20px;
+
+            img{
+                margin-top: 20px;
+                padding: 10px;
+                width: 120px;
+                height: 120px;
+            }
+        }
+
+        p{
+            @include p-tag-style;
+        }
+
+        #designer{
+            font-weight: 600;
+            color: #e84f4f;
+            margin-bottom: 40px;
+        }
+
+        h3{
+            font-weight: 300;
+            font-size: 26px;
+            font-family: 'PlayfairDisplay',;
+        }
+    }
+
+
+/* Client Section End */
+
+
+
+/* Partners Section Start */
+
+
+
+    #partners-logo{
+
+        padding:50px 10px;
+
+    }
+
+
+
+/* Partners Section End */
+
+
+/* footer Start */
+
+    #footer-container{
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: $white;
+    }
+
+    #footer{
+
+        .col-md-4{
+            margin-top: 40px;
+        }
+
+        .border{
+            border-right: 1px solid black;
+            border-left: 1px solid black;
+        }
+
+        #social-icon{
+
+            padding-bottom: 50px;
+            i{
+                padding-right: 16px;
+                color: black;
+
+                a{
+                    color: black;
+                }
+            }
+        }
+
+        h4{
+            font-size: 13px;
+            font-weight: bold;
+        }
+
+        p{
+            @include p-tag-style;
+        }
+
+        h5{
+            span{
+                color: #e84f4f;
+            }
+        }
+    }
+
+/* footer End */
+
+/* Media Query */
+
+
+@media(min-width: 1400px){
+
+
+
+    #image-wrapper{
+        #item-image{
+            width: 50%;
+            height: 100%;
+
+            img{
+                height: 100%;
+            }
+
+        }
+
+        #item-info{
+            width: 50%;
+            font-size: 1vw;
+            background-color: white;
+
+            h4{
+                font-size: 30px;
+            }
+        }
+    }
+
+}
+
+@media(max-width: 1200px)
+{
+    #jewellery-container{
+
+        h5{
+            padding-top: 60px;
+        }
+        h1{
+            font-size: 25px; 
+        }
+    }
+}
+
+@media(max-width: 1102px)
+{
+
+    #header{
+
+        #myNavbar{
+            ul{
+                li{
+                    font-size: 12px;
+                    a{
+                        padding-left: 3px;
+                        padding-right: 3px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 992px)
+{
+    #jewellery-container{
+
+        hr{
+            margin: 5px auto;
+        }
+        h5{
+            padding-top: 30px;
+        }
+
+        h1{
+            font-size: 18px;
+        }
+
+        p{
+            padding: 5px 15px;
+            font-size: 10px;
+        }
+
+        .butn{
+            margin-top: 9px;
+            margin-bottom: 20px;
+        }
+
+    }
+
+    #item-section{
+        /* padding-right: 0; */
+    }
+}
+
+@media(max-width: 990px)
+{
+
+    #image-wrapper{
+        #item-image{
+            height: 260px;
+
+            img{
+                height: 260px;
+            }
+        }
+
+        #item-info{
+            height: 260px;
+        }
+
+        .row{
+        margin-bottom: 20px;
+    }
+    }
+}
+
+
+
+
+@media(max-width: 800px)
+{
+    #jewellery-nav{
+        display: none;
+    }
+
+}
+
+@media(max-width: 790px)
+{
+    .jewellery-nav-section-info{
+
+        h1{
+            font-size: 25px;
+        }
+
+        p{
+            margin: 0;
+            width: 100%;
+        }
+    }
+
+}
+
+
+@media (max-width: 767px){
+
+
+    #myNavbar{
+
+        width: 100%;
+        overflow-x: hidden;
+        position: absolute;
+        z-index: 10;
+        float: right;
+        background-color: $white;
+        a{
+            font-weight: bold;
+            color: black;
+        }
+
+    }
+
+    .navbar-nav.navbar-center {
+        position: relative;
+}
+
+
+    #section-logo{
+        img{
+            width: 300px;
+            height: 150px;
+        }
+    }
+
+    #written-section{
+
+        .offer{
+            width: 90%;
+        }
+    }
+
+    #new-product-container
+    {
+        #border-section
+        {
+
+            border: 25px solid white;
+
+            h1{
+                font-size: 42px;
+            }
+        }
+    }
+
+    #image-wrapper{
+        #item-image{
+            width: 70%;
+        }
+
+        #item-info{
+            width: 70%;
+        }
+    }
+
+     #partners-logo{
+
+        .col-xs-4{
+            width: 100%;
+        }
+    }
+
+    #header{
+
+        #myNavbar{
+            ul{
+                li{
+                    a{
+                        padding-left: 15px;
+                        padding-right: 15px;
+                    }
+                }
+            }
+        }
+    }
+
+    #item-section{
+        #item-image{
+            width: 100%;
+        }
+        #item-info{
+            width: 100%;
+        }
+    }
+}
+
+@media(max-width: 660px)
+{
+    .jewellery-nav-section{
+        display: inline-block;
+    }
+
+    .upper-margin{
+        margin-top: 35px;
+    }
+}
+
+
+@media(max-width: 415px)
+{
+
+    #full-width{
+        width: 100%;
+    }
+
+    .client{
+        width: 100%;
+        margin:0 0 20px 0;
+    }
+
+    .jewellery-nav-section{
+        margin-left: auto;
+        margin-right: auto;
+        height: 619px;
+    }
+
+	#image-wrapper{
+		.pic-section{
+			#section-logo{
+				img{
+					width: 221px;
+					height: 127px;
+				}
+
+				.container-fluid{
+					h1{
+						font-size: 60px;
+					}
+				}
+			}
+		}
+
+	}
+
+    .jewellery-nav-section-info
+    {
+        width: 100%;
+        height: 100%;
+
+        h1{
+            font-size: 20px;
+        }
+
+        p{
+            font-size: 12px;
+            margin: 0;
+            width: 100%;
+        }
+
+        button{
+            margin-top: 25px;
+        }
+    }
+
+    #new-product-container
+    {
+        #border-section
+        {
+
+            border: 20px solid white;
+
+            h1{
+                font-size: 38px;
+            }
+        }
+    }
+
+    #written-section{
+
+        .offer{
+            h3{
+                margin: 20px 3px;
+            }
+            h2{
+                margin: 0 10px;
+            }
+
+            .offer-butn{
+                margin: 15px 0;
+            }
+        }
+        .offer-img{
+            img{
+                padding: 0;
+                width: 190px;
+                height: 170px;
+            }
+        }
+
+
+    }
+}
+
+
+@media(max-width: 380px)
+{
+    #new-product-container
+    {
+        #border-section
+        {
+            border: 15px solid white;
+            width: 100%;
+            height: 410px;
+
+            h1{
+                font-size: 36px;
+            }
+        }
+    }
+
+    #image-wrapper{
+
+        #section-logo
+        {
+            h1{
+                font-size: 60px;
+            }
+        }
+    }
+
+    #border-wrapper{
+        padding:0;
+    }
+
+    .jewellery-nav-section-img{
+        img{
+            height: 50%;
+        }
+    }
+
+    .jewellery-nav-section{
+        height: 595px;
+    }
+
+    .jewellery-nav-section-info{
+
+        height: 85%;
+        h5{
+            padding-top: 50px;
+        }
+    }
+}
