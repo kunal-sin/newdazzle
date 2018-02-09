@@ -634,6 +634,9 @@ body{
     #partners-logo{
 
         padding:50px 10px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
 
     }
 
@@ -746,7 +749,7 @@ body{
         #myNavbar{
             ul{
                 li{
-                    font-size: 12px;
+                    font-size: 13px;
                     a{
                         padding-left: 3px;
                         padding-right: 3px;
@@ -834,6 +837,10 @@ body{
             margin: 0;
             width: 100%;
         }
+    }
+
+    .client{
+        width: 350px;
     }
 
 }

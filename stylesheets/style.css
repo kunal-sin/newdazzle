@@ -622,11 +622,14 @@ body {
 /* line 634, ../sass/style.scss */
 #partners-logo {
   padding: 50px 10px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
 /* Partners Section End */
 /* footer Start */
-/* line 647, ../sass/style.scss */
+/* line 650, ../sass/style.scss */
 #footer-container {
   width: 100%;
   bottom: 0;
@@ -635,34 +638,34 @@ body {
   background-color: #ffffff;
 }
 
-/* line 657, ../sass/style.scss */
+/* line 660, ../sass/style.scss */
 #footer .col-md-4 {
   margin-top: 40px;
 }
-/* line 661, ../sass/style.scss */
+/* line 664, ../sass/style.scss */
 #footer .border {
   border-right: 1px solid black;
   border-left: 1px solid black;
 }
-/* line 666, ../sass/style.scss */
+/* line 669, ../sass/style.scss */
 #footer #social-icon {
   padding-bottom: 50px;
 }
-/* line 669, ../sass/style.scss */
+/* line 672, ../sass/style.scss */
 #footer #social-icon i {
   padding-right: 16px;
   color: black;
 }
-/* line 673, ../sass/style.scss */
+/* line 676, ../sass/style.scss */
 #footer #social-icon i a {
   color: black;
 }
-/* line 679, ../sass/style.scss */
+/* line 682, ../sass/style.scss */
 #footer h4 {
   font-size: 13px;
   font-weight: bold;
 }
-/* line 684, ../sass/style.scss */
+/* line 687, ../sass/style.scss */
 #footer p {
   text-align: center;
   font-weight: 400;
@@ -673,7 +676,7 @@ body {
   color: #999;
   font-family: 'Playfair Display', serif;
 }
-/* line 689, ../sass/style.scss */
+/* line 692, ../sass/style.scss */
 #footer h5 span {
   color: #e84f4f;
 }
@@ -681,119 +684,124 @@ body {
 /* footer End */
 /* Media Query */
 @media (min-width: 1400px) {
-  /* line 705, ../sass/style.scss */
+  /* line 708, ../sass/style.scss */
   #image-wrapper #item-image {
     width: 50%;
     height: 100%;
   }
-  /* line 709, ../sass/style.scss */
+  /* line 712, ../sass/style.scss */
   #image-wrapper #item-image img {
     height: 100%;
   }
-  /* line 715, ../sass/style.scss */
+  /* line 718, ../sass/style.scss */
   #image-wrapper #item-info {
     width: 50%;
     font-size: 1vw;
     background-color: white;
   }
-  /* line 720, ../sass/style.scss */
+  /* line 723, ../sass/style.scss */
   #image-wrapper #item-info h4 {
     font-size: 30px;
   }
 }
 @media (max-width: 1200px) {
-  /* line 732, ../sass/style.scss */
+  /* line 735, ../sass/style.scss */
   #jewellery-container h5 {
     padding-top: 60px;
   }
-  /* line 735, ../sass/style.scss */
+  /* line 738, ../sass/style.scss */
   #jewellery-container h1 {
     font-size: 25px;
   }
 }
 @media (max-width: 1102px) {
-  /* line 748, ../sass/style.scss */
+  /* line 751, ../sass/style.scss */
   #header #myNavbar ul li {
-    font-size: 12px;
+    font-size: 13px;
   }
-  /* line 750, ../sass/style.scss */
+  /* line 753, ../sass/style.scss */
   #header #myNavbar ul li a {
     padding-left: 3px;
     padding-right: 3px;
   }
 }
 @media (max-width: 992px) {
-  /* line 764, ../sass/style.scss */
+  /* line 767, ../sass/style.scss */
   #jewellery-container hr {
     margin: 5px auto;
   }
-  /* line 767, ../sass/style.scss */
+  /* line 770, ../sass/style.scss */
   #jewellery-container h5 {
     padding-top: 30px;
   }
-  /* line 771, ../sass/style.scss */
+  /* line 774, ../sass/style.scss */
   #jewellery-container h1 {
     font-size: 18px;
   }
-  /* line 775, ../sass/style.scss */
+  /* line 778, ../sass/style.scss */
   #jewellery-container p {
     padding: 5px 15px;
     font-size: 11px;
   }
-  /* line 780, ../sass/style.scss */
+  /* line 783, ../sass/style.scss */
   #jewellery-container .butn {
     margin-top: 9px;
     margin-bottom: 20px;
   }
 
-  /* line 787, ../sass/style.scss */
+  /* line 790, ../sass/style.scss */
   #item-section {
     /* padding-right: 0; */
   }
 }
 @media (max-width: 990px) {
-  /* line 796, ../sass/style.scss */
+  /* line 799, ../sass/style.scss */
   #image-wrapper #item-image {
     height: 260px;
   }
-  /* line 799, ../sass/style.scss */
+  /* line 802, ../sass/style.scss */
   #image-wrapper #item-image img {
     height: 260px;
   }
-  /* line 804, ../sass/style.scss */
+  /* line 807, ../sass/style.scss */
   #image-wrapper #item-info {
     height: 260px;
   }
-  /* line 808, ../sass/style.scss */
+  /* line 811, ../sass/style.scss */
   #image-wrapper .row {
     margin-bottom: 20px;
   }
 }
 @media (max-width: 800px) {
-  /* line 819, ../sass/style.scss */
+  /* line 822, ../sass/style.scss */
   #jewellery-nav {
     display: none;
   }
 }
 @media (max-width: 790px) {
-  /* line 829, ../sass/style.scss */
+  /* line 832, ../sass/style.scss */
   .jewellery-nav-section-info h1 {
     font-size: 25px;
   }
-  /* line 833, ../sass/style.scss */
+  /* line 836, ../sass/style.scss */
   .jewellery-nav-section-info p {
     margin: 0;
     width: 100%;
   }
+
+  /* line 842, ../sass/style.scss */
+  .client {
+    width: 350px;
+  }
 }
 @media (max-width: 767px) {
-  /* line 848, ../sass/style.scss */
+  /* line 855, ../sass/style.scss */
   #jewellery-container .jewellery-nav-section-info h1 {
     margin-top: 0;
     padding-bottom: 0;
   }
 
-  /* line 855, ../sass/style.scss */
+  /* line 862, ../sass/style.scss */
   #myNavbar {
     width: 100%;
     overflow-x: hidden;
@@ -802,148 +810,148 @@ body {
     float: right;
     background-color: #ffffff;
   }
-  /* line 863, ../sass/style.scss */
+  /* line 870, ../sass/style.scss */
   #myNavbar a {
     font-weight: bold;
     color: black;
   }
 
-  /* line 870, ../sass/style.scss */
+  /* line 877, ../sass/style.scss */
   .navbar-nav.navbar-center {
     position: relative;
   }
 
-  /* line 876, ../sass/style.scss */
+  /* line 883, ../sass/style.scss */
   #section-logo img {
     width: 300px;
     height: 150px;
   }
 
-  /* line 884, ../sass/style.scss */
+  /* line 891, ../sass/style.scss */
   #written-section .offer {
     width: 90%;
   }
 
-  /* line 891, ../sass/style.scss */
+  /* line 898, ../sass/style.scss */
   #new-product-container #border-section {
     border: 25px solid white;
   }
-  /* line 896, ../sass/style.scss */
+  /* line 903, ../sass/style.scss */
   #new-product-container #border-section h1 {
     font-size: 42px;
   }
 
-  /* line 903, ../sass/style.scss */
+  /* line 910, ../sass/style.scss */
   #image-wrapper #item-image {
     width: 70%;
   }
-  /* line 907, ../sass/style.scss */
+  /* line 914, ../sass/style.scss */
   #image-wrapper #item-info {
     width: 70%;
   }
 
-  /* line 914, ../sass/style.scss */
+  /* line 921, ../sass/style.scss */
   #partners-logo .col-xs-4 {
     width: 100%;
   }
 
-  /* line 924, ../sass/style.scss */
+  /* line 931, ../sass/style.scss */
   #header #myNavbar ul li a {
     padding-left: 15px;
     padding-right: 15px;
   }
 
-  /* line 934, ../sass/style.scss */
+  /* line 941, ../sass/style.scss */
   #item-section #item-image {
     width: 100%;
   }
-  /* line 937, ../sass/style.scss */
+  /* line 944, ../sass/style.scss */
   #item-section #item-info {
     width: 100%;
   }
 }
 @media (max-width: 660px) {
-  /* line 946, ../sass/style.scss */
+  /* line 953, ../sass/style.scss */
   .jewellery-nav-section {
     display: inline-block;
   }
 
-  /* line 950, ../sass/style.scss */
+  /* line 957, ../sass/style.scss */
   .upper-margin {
     margin-top: 35px;
   }
 }
 @media (max-width: 415px) {
-  /* line 959, ../sass/style.scss */
+  /* line 966, ../sass/style.scss */
   #full-width {
     width: 100%;
   }
 
-  /* line 963, ../sass/style.scss */
+  /* line 970, ../sass/style.scss */
   .client {
     width: 100%;
     margin: 0 0 20px 0;
   }
 
-  /* line 968, ../sass/style.scss */
+  /* line 975, ../sass/style.scss */
   .jewellery-nav-section {
     margin-left: auto;
     margin-right: auto;
     height: 619px;
   }
 
-  /* line 977, ../sass/style.scss */
+  /* line 984, ../sass/style.scss */
   #image-wrapper .pic-section #section-logo img {
     width: 221px;
     height: 127px;
   }
-  /* line 983, ../sass/style.scss */
+  /* line 990, ../sass/style.scss */
   #image-wrapper .pic-section #section-logo .container-fluid h1 {
     font-size: 60px;
   }
 
-  /* line 992, ../sass/style.scss */
+  /* line 999, ../sass/style.scss */
   .jewellery-nav-section-info {
     width: 100%;
     height: 100%;
   }
-  /* line 997, ../sass/style.scss */
+  /* line 1004, ../sass/style.scss */
   .jewellery-nav-section-info h1 {
     font-size: 20px;
   }
-  /* line 1001, ../sass/style.scss */
+  /* line 1008, ../sass/style.scss */
   .jewellery-nav-section-info p {
     font-size: 12px;
     margin: 0;
     width: 100%;
   }
-  /* line 1007, ../sass/style.scss */
+  /* line 1014, ../sass/style.scss */
   .jewellery-nav-section-info button {
     margin-top: 25px;
   }
 
-  /* line 1014, ../sass/style.scss */
+  /* line 1021, ../sass/style.scss */
   #new-product-container #border-section {
     border: 20px solid white;
   }
-  /* line 1019, ../sass/style.scss */
+  /* line 1026, ../sass/style.scss */
   #new-product-container #border-section h1 {
     font-size: 38px;
   }
 
-  /* line 1028, ../sass/style.scss */
+  /* line 1035, ../sass/style.scss */
   #written-section .offer h3 {
     margin: 20px 3px;
   }
-  /* line 1031, ../sass/style.scss */
+  /* line 1038, ../sass/style.scss */
   #written-section .offer h2 {
     margin: 0 10px;
   }
-  /* line 1035, ../sass/style.scss */
+  /* line 1042, ../sass/style.scss */
   #written-section .offer .offer-butn {
     margin: 15px 0;
   }
-  /* line 1040, ../sass/style.scss */
+  /* line 1047, ../sass/style.scss */
   #written-section .offer-img img {
     padding: 0;
     width: 190px;
@@ -951,42 +959,42 @@ body {
   }
 }
 @media (max-width: 380px) {
-  /* line 1056, ../sass/style.scss */
+  /* line 1063, ../sass/style.scss */
   #new-product-container #border-section {
     border: 15px solid white;
     width: 100%;
     height: 410px;
   }
-  /* line 1062, ../sass/style.scss */
+  /* line 1069, ../sass/style.scss */
   #new-product-container #border-section h1 {
     font-size: 36px;
   }
 
-  /* line 1072, ../sass/style.scss */
+  /* line 1079, ../sass/style.scss */
   #image-wrapper #section-logo h1 {
     font-size: 60px;
   }
 
-  /* line 1078, ../sass/style.scss */
+  /* line 1085, ../sass/style.scss */
   #border-wrapper {
     padding: 0;
   }
 
-  /* line 1083, ../sass/style.scss */
+  /* line 1090, ../sass/style.scss */
   .jewellery-nav-section-img img {
     height: 50%;
   }
 
-  /* line 1088, ../sass/style.scss */
+  /* line 1095, ../sass/style.scss */
   .jewellery-nav-section {
     height: 595px;
   }
 
-  /* line 1092, ../sass/style.scss */
+  /* line 1099, ../sass/style.scss */
   .jewellery-nav-section-info {
     height: 85%;
   }
-  /* line 1095, ../sass/style.scss */
+  /* line 1102, ../sass/style.scss */
   .jewellery-nav-section-info h5 {
     padding-top: 50px;
   }
