@@ -76,7 +76,8 @@ body{
   height: 0;
   position: absolute;
   right: 0;
-  margin-top: 100px;
+  top: 40%;
+  transform: translate(11%);
   border-top: 30px solid transparent;
   border-bottom: 30px solid transparent;
 
@@ -86,8 +87,9 @@ body{
 .triangle-right {
   width: 0;
   height: 0;
-  margin-top: 100px;
+  top: 40%;
   position: absolute;
+  transform: translate(-16%);
   border-top: 30px solid transparent;
   border-bottom: 30px solid transparent;
 
@@ -98,7 +100,8 @@ body{
   width: 0;
   height: 0;
   position: absolute;
-  margin-left: 40%;
+  left: 50%;
+  transform: translate(-50%);
   border-left: 30px solid transparent;
   border-right: 30px solid transparent;
 
@@ -111,7 +114,8 @@ body{
   height: 0;
   position: absolute;
   top: 0;
-  margin-left: 40%;
+  left: 50%;
+  transform: translate(-50%);
   border-left: 30px solid transparent;
   border-right: 30px solid transparent;
 
@@ -134,6 +138,12 @@ body{
 }
 
 #header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10000;
+    box-shadow: 10px 0px 5px grey;
     border-radius: 0px;
     height: 86px;
     background-color: $white;
@@ -145,7 +155,9 @@ body{
         border-color: $white;
 
         ul{
+            border-top: none;
             li{
+                text-align: center;
                 &:hover{
 
                     a{
@@ -157,6 +169,7 @@ body{
                 a{
                     &:focus{
                         color:black;
+                        background-color: white;
                     }
                 }
 
@@ -177,6 +190,7 @@ body{
 
 #image-wrapper{
 
+    margin-top: 86px;
      padding: 0;
     .pic-section
     {
@@ -185,7 +199,6 @@ body{
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        position: relative;
 
     }
 
@@ -829,6 +842,16 @@ body{
 @media (max-width: 767px){
 
 
+    #jewellery-container{
+        .jewellery-nav-section-info{
+
+            h1{
+                margin-top: 0;
+                padding-bottom: 0;
+            }
+        }
+    }
+
     #myNavbar{
 
         width: 100%;
@@ -913,6 +936,7 @@ body{
         }
         #item-info{
             width: 100%;
+
         }
     }
 }
