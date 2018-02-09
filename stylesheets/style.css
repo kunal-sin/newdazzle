@@ -15,12 +15,12 @@ body {
 /*Slick Styling*/
 /* line 21, ../sass/style.scss */
 #offer-container .slick-prev, #client-container .slick-prev {
-  left: 0;
+  left: 3px;
   z-index: 1000;
 }
 /* line 26, ../sass/style.scss */
 #offer-container .slick-next, #client-container .slick-next {
-  right: 17px;
+  right: 23px;
   z-index: 1000;
 }
 /* line 31, ../sass/style.scss */
