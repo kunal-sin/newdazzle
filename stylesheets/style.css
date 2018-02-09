@@ -959,42 +959,42 @@ body {
   }
 }
 @media (max-width: 380px) {
-  /* line 1063, ../sass/style.scss */
+  /* line 1064, ../sass/style.scss */
   #new-product-container #border-section {
     border: 15px solid white;
     width: 100%;
     height: 410px;
   }
-  /* line 1069, ../sass/style.scss */
+  /* line 1070, ../sass/style.scss */
   #new-product-container #border-section h1 {
     font-size: 36px;
   }
 
-  /* line 1079, ../sass/style.scss */
+  /* line 1080, ../sass/style.scss */
   #image-wrapper #section-logo h1 {
     font-size: 60px;
   }
 
-  /* line 1085, ../sass/style.scss */
+  /* line 1086, ../sass/style.scss */
   #border-wrapper {
     padding: 0;
   }
 
-  /* line 1090, ../sass/style.scss */
+  /* line 1091, ../sass/style.scss */
   .jewellery-nav-section-img img {
     height: 50%;
   }
 
-  /* line 1095, ../sass/style.scss */
+  /* line 1096, ../sass/style.scss */
   .jewellery-nav-section {
     height: 595px;
   }
 
-  /* line 1099, ../sass/style.scss */
+  /* line 1100, ../sass/style.scss */
   .jewellery-nav-section-info {
     height: 85%;
   }
-  /* line 1102, ../sass/style.scss */
+  /* line 1103, ../sass/style.scss */
   .jewellery-nav-section-info h5 {
     padding-top: 50px;
   }

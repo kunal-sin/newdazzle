@@ -84,6 +84,30 @@ $(document).ready(function()
               $(".triangle-right").removeClass('triangle-down');
           }
 
+          if($(window).width()<416)
+          {
+            $(".column").removeClass('col-xs-10');
+            $(".column").addClass('col-xs-12');
+            $(".column").removeClass('col-xs-offset-1');
+
+            $(".column").removeClass('col-xs-10');
+            $(".column").addClass('col-xs-12');
+          }
+          else
+          {
+
+            $(".column").removeClass('col-xs-12');
+            $(".column").addClass('col-xs-10');
+            $(".column").removeClass('col-xs-12');
+            $(".column").addClass('col-xs-10');
+            $(".column").addClass('col-xs-offset-1');
+          }
+
+          if($(window).width()>767)
+          {
+            $(".column").removeClass('col-xs-offset-1');
+          }
+
         });
 
         $('.scroller').slick({
