@@ -57,7 +57,7 @@ body {
   width: 35px;
   position: fixed;
   z-index: 10;
-  margin-top: 320px;
+  margin-top: 200px;
 }
 /* line 64, ../sass/style.scss */
 #fixed-icon a {
