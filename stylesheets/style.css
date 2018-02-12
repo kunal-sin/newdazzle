@@ -103,7 +103,7 @@ body {
   position: absolute;
   left: 50%;
   transform: translate(-50%);
-  -webkit-transform: translate(50%);
+  -webkit-transform: translate(-50%);
   border-left: 30px solid transparent;
   border-right: 30px solid transparent;
   border-bottom: 30px solid #ffffff;
@@ -118,7 +118,7 @@ body {
   top: 0;
   left: 50%;
   transform: translate(-50%);
-  -webkit-transform: translate(50%);
+  -webkit-transform: translate(-50%);
   border-left: 30px solid transparent;
   border-right: 30px solid transparent;
   border-top: 30px solid #ffffff;
