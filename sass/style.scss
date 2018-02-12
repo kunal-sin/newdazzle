@@ -453,6 +453,7 @@ body{
     margin-top: 20px;
     box-shadow: 5px 5px 10px grey;
     display: flex;
+    display: -webkit-flex;
     background-color: $white;
 
 }
@@ -640,6 +641,7 @@ body{
 
         padding:50px 10px;
         display: flex;
+        display: -webkit-flex;
         flex-wrap: wrap;
         align-items: center;
 
