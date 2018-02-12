@@ -141,6 +141,10 @@ body{
     transform: translatex(-50%);
     -webkit-transform: translatex(-50%);
 }
+.navbar-inverse .navbar-nav>.open>a{
+    background-color: white;
+    color: black;
+}
 
 #header{
     position: fixed;
