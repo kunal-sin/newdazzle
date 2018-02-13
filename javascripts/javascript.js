@@ -45,7 +45,11 @@ $(document).ready(function()
         	$("#slider3").addClass('hide');
         }
 
-        $(window).resize(function(){
+        $(window).load(change());
+        $(window).resize(change());
+
+
+          function change(){
 
         	if($(window).width() <768)
         	{
@@ -112,7 +116,7 @@ $(document).ready(function()
           }
 
 
-        });
+        }
 
         $('.scroller').slick({
                 infinite: false,
