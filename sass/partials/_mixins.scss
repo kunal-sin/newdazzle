@@ -9,8 +9,29 @@
     font-size: 15px;
     margin: 5px;
     padding: 0 25px;
-    color: $light-grey;
-    font-family: 'Playfair Display', serif;
+    color: $gray;
+    font-family: $play, serif;
+}
+
+@mixin butn-style{
+
+		font-weight: bold;
+        border-width: 0.25px;
+        width: 140px;
+        height: 48px;
+        color: $white;
+        font-family: Lato;
+        margin-top: 50px;
+        border-style: solid;
+        background-color: $nav-hover;
+        border-radius: 4px;
+        font-size: 16px;
+        outline: none;
+        transition-duration: 0.8s;
+        &:hover{
+            background-color:$butn-hover;
+            transition-duration: 0.5s;
+        }
 }
 
 

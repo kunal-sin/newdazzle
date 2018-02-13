@@ -1,0 +1,366 @@
+/* Media Query */
+
+
+@media screen and (max-width: $lg)
+{
+    #jewellery-container{
+
+        
+        h1{
+            font-size: 25px;
+        }
+    }
+     #header{
+
+        #myNavbar{
+            ul{
+                li{
+                    font-size: 15px;
+                    a{
+                        padding-left: 5px;
+                        padding-right: 5px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+@media screen and (max-width: $md)
+{
+
+    #header{
+
+        #myNavbar{
+            ul{
+                li{
+                    font-size: 13px;
+                    a{
+                        padding-left: 3px;
+                        padding-right: 3px;
+                    }
+                }
+            }
+        }
+    }
+
+    #jewellery-container{
+
+        hr{
+            margin: 5px auto;
+        }
+        
+
+        h1{
+            font-size: 18px;
+        }
+
+        p{
+            padding: 5px 15px;
+            font-size: 11px;
+        }
+
+        .butn{
+            margin-top: 9px;
+            margin-bottom: 20px;
+        }
+
+    }
+    #item-section{
+        /* padding-right: 0; */
+        .column{
+            #item-image{
+                img{
+                height: unset;
+                }
+            }
+        }
+    }
+
+    #image-wrapper{
+        #item-image{
+            height: 260px;
+
+            img{
+                height: 260px;
+            }
+        }
+
+        #item-info{
+            height: 260px;
+        }
+
+        .row{
+        margin-bottom: 20px;
+        }
+    }
+
+}
+
+
+@media screen and (max-width: $sm){
+
+    #jewellery-nav{
+        display: none;
+    }
+
+    .client{
+        width: 350px;
+    }
+
+    #jewellery-container{
+
+        .jewellery-nav-section-img{
+
+            img{
+                width: 100%;
+            }
+        }
+
+        .jewellery-nav-section-info{
+
+            padding: 25px 5px;
+
+            h1{
+                margin-top: 0;
+                padding-bottom: 0;
+                font-size: 23px;
+            }
+
+            p{
+                padding: 5px 5px;
+                font-size: 9px;
+            }
+        }
+
+        .butn{
+            margin-bottom: 0;
+        }
+    }
+
+    #myNavbar{
+
+        width: 100%;
+        overflow-x: hidden;
+        position: absolute;
+        z-index: 10;
+        float: right;
+        background-color: $white;
+        a{
+            font-weight: bold;
+            color: black;
+        }
+
+    }
+
+    .navbar-nav.navbar-center {
+        position: relative;
+    }
+
+
+    #section-logo{
+        img{
+            width: 300px;
+            height: 150px;
+        }
+    }
+
+    #written-section{
+
+        .offer{
+            width: 90%;
+        }
+    }
+
+    #new-product-container
+    {
+            #border-section{
+                border: 20px solid white;
+            
+                h2{
+                    font-size: 40px;
+                }
+
+            }
+
+
+    }
+
+
+    #image-wrapper{
+        #item-image{
+            width: 70%;
+        }
+
+        #item-info{
+            width: 70%;
+        }
+    }
+
+     #partners-logo{
+
+        .col-xs-4{
+            width: 100%;
+        }
+    }
+
+    #header{
+
+        #myNavbar{
+            ul{
+                li{
+                    a{
+                        padding-left: 15px;
+                        padding-right: 15px;
+                    }
+                }
+            }
+        }
+    }
+
+    #item-section{
+        #item-image{
+            width: 100%;
+        }
+        #item-info{
+            width: 100%;
+
+        }
+    }
+
+    .upper-margin{
+        margin-top: 35px;
+    }
+}
+
+
+@media screen and (max-width: $xs)
+{
+
+
+    #jewellery-container{
+        #slider1,#slider2,#slider3{
+            margin-top: 20px;
+        }
+    }
+
+    #full-width{
+        width: 100%;
+    }
+
+    .client{
+        width: 100%;
+        margin:0 0 20px 0;
+    }
+
+    .jewellery-nav-section{
+        margin-left: auto;
+        margin-right: auto;
+
+        display: unset;
+
+        .jewellery-nav-section-img{
+            position: unset;
+            display: unset;
+        }
+    }
+
+
+
+	#image-wrapper{
+		.pic-section{
+			#section-logo{
+				img{
+					width: 221px;
+					height: 127px;
+				}
+
+                h3{
+
+                }
+
+				.container-fluid{
+					h1{
+						font-size: 50px;
+					}
+				}
+			}
+		}
+
+	}
+
+    .jewellery-nav-section-info
+    {
+        width: 100%;
+        height: 100%;
+
+        h1{
+            font-size: 20px;
+        }
+
+        p{
+            font-size: 12px;
+            margin: 0;
+            width: 100%;
+        }
+
+        button{
+            margin-top: 25px;
+        }
+    }
+
+    #new-product-container
+    {
+        #border-section
+        {
+
+            border: 20px solid white;
+
+            h1{
+                font-size: 38px;
+            }
+        }
+    }
+
+    #written-section{
+
+        .offer{
+            h3{
+                margin: 20px 3px;
+            }
+            h2{
+                margin: 0 10px;
+            }
+
+            .offer-butn{
+                margin: 15px 0;
+            }
+        }
+        .offer-img{
+            img{
+                padding: 0;
+                width: 190px;
+                height: 170px;
+            }
+        }
+
+
+    }
+
+     #image-wrapper{
+
+        #section-logo
+        {
+            h1{
+                font-size: 60px;
+            }
+        }
+    }
+
+    #border-wrapper{
+        padding:0;
+    }
+
+}

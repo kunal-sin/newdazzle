@@ -1,6 +1,4 @@
-
-@import "partials/variables";
-@import "partials/mixins";
+@import "partials/include";
 
 html{
     width: 100%;
@@ -30,7 +28,7 @@ body{
 
     .slick-prev:before, .slick-next:before{
         font-size: 40px;
-        color: #999;
+        color: $gray;
     }
 }
 
@@ -54,7 +52,7 @@ body{
 
 
 #fixed-icon{
-    background-color: #333;
+    background-color: black;
     height: 35px;
     width: 35px;
     position: fixed;
@@ -152,7 +150,7 @@ body{
     right: 0;
     left: 0;
     z-index: 10000;
-    box-shadow: 10px 0px 5px grey;
+    box-shadow: 10px 0px 5px $gray;
     border-radius: 0px;
     height: 86px;
     background-color: $white;
@@ -187,8 +185,9 @@ body{
     }
 
     #nav-button{
-        background-color: #333;
+        background-color: $gray;
         margin: 20px;
+        border-color: $gray;
 
     }
 }
@@ -239,24 +238,7 @@ body{
 
     .butn
     {
-        font-weight: bold;
-        border-width: 0.25px;
-        border-color: #000000;
-        width: 140px;
-        height: 48px;
-        color: #ffffff;
-        font-family: Lato;
-        margin-top: 50px;
-        border-style: solid;
-        background-color: #ead2ac;
-        border-radius: 4px;
-        font-size: 16px;
-        outline: none;
-        transition-duration: 0.8s;
-        &:hover{
-            background-color:#e4bb70;
-            transition-duration: 0.5s;
-        }
+        @include butn-style;
     }
 /* Image Section End */
 
@@ -303,7 +285,7 @@ body{
             font-size: 15px;
             margin: 5px 5px;
             padding: 0 25px;
-            color: $light-grey;
+            color: $gray;
             font-family: 'Playfair Display', serif;
         }
 
@@ -327,25 +309,9 @@ body{
 
         .offer-butn
             {
-              font-weight: bold;
-              border-width: 0.25px;
-              border-color: #000000;
+              @include butn-style;
               width: 180px;
-              height: 48px;
-              color: #ffffff;
-              font-family: Lato;
               margin: 30px 0;
-              border-style: solid;
-              background-color: #ead2ac;
-              border-radius: 4px;
-              font-size: 16px;
-
-              outline: none;
-              transition-duration: 0.8s;
-              &:hover{
-                background-color:#e4bb70;
-                transition-duration: 0.5s;
-                }
             }
     }
 
@@ -354,10 +320,6 @@ body{
         align-content: center;
         padding:0;
 
-        a{
-            color: #8e9398;
-            float: left;
-        }
     }
 }
 
@@ -385,7 +347,7 @@ body{
 
       h3
       {
-        color: #ffffff;
+        color: white;
         font-size: 18px;
         word-spacing: 5px;
         letter-spacing: 3px;
@@ -393,10 +355,10 @@ body{
         margin-top: 50px;
       }
 
-      h1
+      h2
       {
               font-family: 'Playfair Display', serif;
-              color: #ffffff;
+              color: white;
               font-size: 72px;
               letter-spacing: 5px;
               font-weight: 900;
@@ -427,7 +389,7 @@ body{
       display: inline;
       margin: 0;
       a {
-        color: #d9d9d9;
+        color: $gray;
         font-weight: bold;
         text-decoration: none;
 
@@ -439,7 +401,7 @@ body{
       }
       &:hover {
         color: black;
-        border-bottom: 2px solid  #ead2ac;
+        border-bottom: 2px solid  $nav-hover;
       }
     }
     .active
@@ -455,7 +417,7 @@ body{
 .jewellery-nav-section {
 
     margin-top: 20px;
-    box-shadow: 5px 5px 10px grey;
+    box-shadow: 5px 5px 10px $gray;
     display: flex;
     display: -webkit-flex;
     background-color: $white;
@@ -470,23 +432,33 @@ body{
 
 .jewellery-nav-section-img {
   width: 100%;
+  height: 100%;
+ 
+  overflow: hidden;
   img {
-    height: 100%;
+  
     width: 100%;
+    height: inherit;
+
   }
 }
 
 .jewellery-nav-section-info {
   background-color: white;
   height: 100%;
+  padding: 50px 0;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
   h5 {
     margin: 0;
     color: #9999998a;
-    padding-top: 80px;
     font-weight: bold;
   }
   h1 {
-    font-family: PlayfairDisplay;
+    font-family: $play;
     font-size: 32px;
     font-weight: 700;
     font-style: italic;
@@ -550,7 +522,7 @@ body{
         text-align: justify;
 
         h4{
-            font-family: 'PlayfairDisplay';
+            font-family: $play;
             font-size: 20px;
             font-weight: bold;
         }
@@ -565,7 +537,7 @@ body{
         }
 
         a{
-            font-family: Lato;
+            font-family: $lato;
             color: $red;
             display: inline-block;
             font-weight: bold;
@@ -577,7 +549,7 @@ body{
         }
 
         p {
-          font-family: Lato;
+          font-family: $lato;
           font-weight: bold;
           color: #8e8b8be0;
           float: left;
@@ -628,14 +600,14 @@ body{
 
         #designer{
             font-weight: 600;
-            color: #e84f4f;
+            color: $designer-red;
             margin-bottom: 40px;
         }
 
         h3{
             font-weight: 300;
             font-size: 26px;
-            font-family: 'PlayfairDisplay',;
+            font-family: $play;
         }
     }
 
@@ -713,428 +685,11 @@ body{
 
         h5{
             span{
-                color: #e84f4f;
+                color: $designer-red;
             }
         }
     }
 
 /* footer End */
 
-/* Media Query */
-
-
-@media(min-width: 1400px){
-
-
-
-    #image-wrapper{
-        #item-image{
-            width: 50%;
-            height: 100%;
-
-            img{
-                height: 100%;
-            }
-
-        }
-
-        #item-info{
-            width: 50%;
-            font-size: 1vw;
-            background-color: white;
-
-            h4{
-                font-size: 30px;
-            }
-        }
-    }
-
-}
-
-@media(max-width: 1200px)
-{
-    #jewellery-container{
-
-        h5{
-            padding-top: 60px;
-        }
-        h1{
-            font-size: 25px;
-        }
-    }
-}
-
-@media(max-width: 1102px)
-{
-
-    #header{
-
-        #myNavbar{
-            ul{
-                li{
-                    font-size: 13px;
-                    a{
-                        padding-left: 3px;
-                        padding-right: 3px;
-                    }
-                }
-            }
-        }
-    }
-}
-
-@media(max-width: 992px)
-{
-    #jewellery-container{
-
-        hr{
-            margin: 5px auto;
-        }
-        h5{
-            padding-top: 30px;
-        }
-
-        h1{
-            font-size: 18px;
-        }
-
-        p{
-            padding: 5px 15px;
-            font-size: 11px;
-        }
-
-        .butn{
-            margin-top: 9px;
-            margin-bottom: 20px;
-        }
-
-    }
-}
-
-@media(max-width: 991px)
-{
-    #item-section{
-        /* padding-right: 0; */
-        .column{
-            #item-image{
-                img{
-                height: unset;
-                }
-            }
-        }
-    }
-}
-
-@media(max-width: 990px)
-{
-
-    #image-wrapper{
-        #item-image{
-            height: 260px;
-
-            img{
-                height: 260px;
-            }
-        }
-
-        #item-info{
-            height: 260px;
-        }
-
-        .row{
-        margin-bottom: 20px;
-    }
-    }
-}
-
-
-
-
-@media(max-width: 800px)
-{
-    #jewellery-nav{
-        display: none;
-    }
-
-}
-
-@media(max-width: 790px)
-{
-    .jewellery-nav-section-info{
-
-        h1{
-            font-size: 25px;
-        }
-
-        p{
-            margin: 0;
-            width: 100%;
-        }
-    }
-
-    .client{
-        width: 350px;
-    }
-
-}
-
-
-@media (max-width: 767px){
-
-
-    #jewellery-container{
-        .jewellery-nav-section-info{
-
-            h1{
-                margin-top: 0;
-                padding-bottom: 0;
-            }
-        }
-    }
-
-    #myNavbar{
-
-        width: 100%;
-        overflow-x: hidden;
-        position: absolute;
-        z-index: 10;
-        float: right;
-        background-color: $white;
-        a{
-            font-weight: bold;
-            color: black;
-        }
-
-    }
-
-    .navbar-nav.navbar-center {
-        position: relative;
-}
-
-
-    #section-logo{
-        img{
-            width: 300px;
-            height: 150px;
-        }
-    }
-
-    #written-section{
-
-        .offer{
-            width: 90%;
-        }
-    }
-
-    #new-product-container
-    {
-        #border-section
-        {
-
-            border: 25px solid white;
-
-            h1{
-                font-size: 42px;
-            }
-        }
-    }
-
-    #image-wrapper{
-        #item-image{
-            width: 70%;
-        }
-
-        #item-info{
-            width: 70%;
-        }
-    }
-
-     #partners-logo{
-
-        .col-xs-4{
-            width: 100%;
-        }
-    }
-
-    #header{
-
-        #myNavbar{
-            ul{
-                li{
-                    a{
-                        padding-left: 15px;
-                        padding-right: 15px;
-                    }
-                }
-            }
-        }
-    }
-
-    #item-section{
-        #item-image{
-            width: 100%;
-        }
-        #item-info{
-            width: 100%;
-
-        }
-    }
-}
-
-@media(max-width: 660px)
-{
-    .jewellery-nav-section{
-        display: inline-block;
-    }
-
-    .upper-margin{
-        margin-top: 35px;
-    }
-}
-
-
-@media(max-width: 415px)
-{
-
-    #full-width{
-        width: 100%;
-    }
-
-    .client{
-        width: 100%;
-        margin:0 0 20px 0;
-    }
-
-    .jewellery-nav-section{
-        margin-left: auto;
-        margin-right: auto;
-        height: 619px;
-    }
-
-	#image-wrapper{
-		.pic-section{
-			#section-logo{
-				img{
-					width: 221px;
-					height: 127px;
-				}
-
-				.container-fluid{
-					h1{
-						font-size: 60px;
-					}
-				}
-			}
-		}
-
-	}
-
-    .jewellery-nav-section-info
-    {
-        width: 100%;
-        height: 100%;
-
-        h1{
-            font-size: 20px;
-        }
-
-        p{
-            font-size: 12px;
-            margin: 0;
-            width: 100%;
-        }
-
-        button{
-            margin-top: 25px;
-        }
-    }
-
-    #new-product-container
-    {
-        #border-section
-        {
-
-            border: 20px solid white;
-
-            h1{
-                font-size: 38px;
-            }
-        }
-    }
-
-    #written-section{
-
-        .offer{
-            h3{
-                margin: 20px 3px;
-            }
-            h2{
-                margin: 0 10px;
-            }
-
-            .offer-butn{
-                margin: 15px 0;
-            }
-        }
-        .offer-img{
-            img{
-                padding: 0;
-                width: 190px;
-                height: 170px;
-            }
-        }
-
-
-    }
-
-}
-
-
-@media(max-width: 380px)
-{
-    #new-product-container
-    {
-        #border-section
-        {
-            border: 15px solid white;
-            width: 100%;
-            height: 410px;
-
-            h1{
-                font-size: 36px;
-            }
-        }
-    }
-
-    #image-wrapper{
-
-        #section-logo
-        {
-            h1{
-                font-size: 60px;
-            }
-        }
-    }
-
-    #border-wrapper{
-        padding:0;
-    }
-
-    .jewellery-nav-section-img{
-        img{
-            height: 50%;
-        }
-    }
-
-    .jewellery-nav-section{
-        height: 595px;
-    }
-
-    .jewellery-nav-section-info{
-
-        height: 85%;
-        h5{
-            padding-top: 50px;
-        }
-    }
-}
+@import "partials/responsive";
