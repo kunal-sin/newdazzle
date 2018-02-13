@@ -1,5 +1,7 @@
 /* Media Query */
 
+@import "partials/include";
+
 
 @media screen and (max-width: $lg)
 {
@@ -230,7 +232,7 @@
         }
     }
 
-    .upper-margin{
+    .upper-margin {
         margin-top: 35px;
     }
 }
@@ -311,10 +313,9 @@
         }
     }
 
-    #new-product-container
-    {
-        #border-section
-        {
+    #new-product-container {
+
+        #border-section {
 
             border: 20px solid white;
 
@@ -351,8 +352,7 @@
 
      #image-wrapper{
 
-        #section-logo
-        {
+        #section-logo {
             h1{
                 font-size: 60px;
             }

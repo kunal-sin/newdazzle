@@ -77,6 +77,8 @@ body{
   top: 40%;
   transform: translate(11%);
   -webkit-transform: translate(11%);
+  -mos-transform: translate(11%);
+  -ms-transform: translate(11%);
   border-top: 30px solid transparent;
   border-bottom: 30px solid transparent;
 
@@ -90,6 +92,9 @@ body{
   position: absolute;
   transform: translate(-16%);
   -webkit-transform: translate(-16%);
+  -mos-transform: translate(-16%);
+  -ms-transform: translate(-16%);
+
   border-top: 30px solid transparent;
   border-bottom: 30px solid transparent;
 
@@ -103,6 +108,8 @@ body{
   left: 50%;
   transform: translate(-50%);
   -webkit-transform: translate(-50%);
+  -mos-transform: translate(-50%);
+  -ms-transform: translate(-50%);
   border-left: 30px solid transparent;
   border-right: 30px solid transparent;
 
@@ -118,6 +125,8 @@ body{
   left: 50%;
   transform: translate(-50%);
   -webkit-transform: translate(-50%);
+  -mos-transform: translate(-50%);
+  -ms-transform: translate(-50%);
   border-left: 30px solid transparent;
   border-right: 30px solid transparent;
 
@@ -138,6 +147,8 @@ body{
     left: 50%;
     transform: translatex(-50%);
     -webkit-transform: translatex(-50%);
+    -mos-transform: translatex(-50%);
+    -ms-transform: translatex(-50%);
 }
 .navbar-inverse .navbar-nav>.open>a{
     background-color: white;
@@ -420,6 +431,8 @@ body{
     box-shadow: 5px 5px 10px $gray;
     display: flex;
     display: -webkit-flex;
+    display: -mos-flex;
+    display: -ms-flex;
     background-color: $white;
 
 }
@@ -449,6 +462,9 @@ body{
   padding: 50px 0;
   justify-content: center;
   display: flex;
+  display: -webkit-flex;
+  display: -mos-flex;
+  display: -ms-flex;
   flex-direction: column;
   align-items: center;
 
@@ -496,9 +512,13 @@ body{
 
     .column{
         display: flex;
-         display: -webkit-flex;
+        display: -webkit-flex;
+        display: -mos-flex;
+        display: -ms-flex;
         flex-wrap: wrap;
         -webkit-flex-wrap: wrap;
+        -mos-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
     }
     #item-image{
         width: 50%;
@@ -625,8 +645,12 @@ body{
         padding:50px 10px;
         display: flex;
         display: -webkit-flex;
+        display: -mos-flex;
+        display: -ms-flex;
         flex-wrap: wrap;
         -webkit-flex-wrap: wrap;
+        -mos-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
         align-items: center;
 
         img{
@@ -691,5 +715,3 @@ body{
     }
 
 /* footer End */
-
-@import "partials/responsive";
