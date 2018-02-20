@@ -220,7 +220,4 @@ $(document).ready(function(){
                 ]
           });
 
-        $(window).load(function() {
-            $('#section-logo img').addClass('animated bounceInLeft');
-        });
 });
