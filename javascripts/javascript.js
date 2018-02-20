@@ -1,8 +1,8 @@
 
 
-$(document).ready(function()
-{
-    document.load = change();
+$(document).ready(function(){
+
+        document.load = change();
         $("#first").click(function(){
           $("#first").addClass('active');
           $("#second").removeClass('active');
@@ -184,10 +184,7 @@ $(document).ready(function()
 
 
         // $(window).load(change());
-        
-
-
-        
+      
 
         $('.scroller').slick({
                 infinite: false,
@@ -223,8 +220,5 @@ $(document).ready(function()
                 ]
           });
 
-
-
-      }
-
-);
+        $('#section-logo img').addClass('animated bounceInLeft');
+});

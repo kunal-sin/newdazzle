@@ -13,6 +13,7 @@
     <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
     <link rel="stylesheet" type="text/css" href="stylesheets/partials/responsive.css">
+    <link rel="stylesheet" href="stylesheets/animate.min.css">
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:900i" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400i" rel="stylesheet">
 </head>
@@ -82,7 +83,7 @@
 
                     <div><h1>Beautiful Jewellery</h1></div>
 
-                    <button type="button" class="butn">SHOP NOW</button>
+                    <button type="button" class="butn hvr-grow-shadow">SHOP NOW</button>
                 </div>
             </div>
         </div>
@@ -117,7 +118,7 @@
 
                           <h2>$250.00</h2>
 
-                          <button type="button" class="offer-butn">ADD TO CART</button>
+                          <button type="button" class="offer-butn hvr-grow-shadow">ADD TO CART</button>
 
                       </div>
 
@@ -136,7 +137,7 @@
 
                           <h2>$15.00</h2>
 
-                          <button type="button" class="offer-butn">ADD TO CART</button>
+                          <button type="button" class="offer-butn hvr-grow-shadow">ADD TO CART</button>
 
                       </div>
 
@@ -154,7 +155,7 @@
 
                           <h2>$65.00</h2>
 
-                          <button type="button" class="offer-butn">ADD TO CART</button>
+                          <button type="button" class="offer-butn hvr-grow-shadow">ADD TO CART</button>
 
                       </div>
 
@@ -172,7 +173,7 @@
 
                           <h2>$95.00</h2>
 
-                          <button type="button" class="offer-butn">ADD TO CART</button>
+                          <button type="button" class="offer-butn hvr-grow-shadow">ADD TO CART</button>
 
                       </div>
 
@@ -190,7 +191,7 @@
 
                           <h2>$95.00</h2>
 
-                          <button type="button" class="offer-butn">ADD TO CART</button>
+                          <button type="button" class="offer-butn hvr-grow-shadow">ADD TO CART</button>
 
                       </div>
                     </div>
@@ -203,7 +204,7 @@
 
   <!-- New Product Section Start -->
 
-    <section>
+    <section class="wow jackInTheBox">
       <div id="new-product-container" class="upper-margin">
         <div class="container">
             <div class="new-pic-section row" align="center">
@@ -216,7 +217,7 @@
 
                       <h2>Check for New Jewels</h2>
 
-                      <button type="button" class="butn">SHOP NOW</button>
+                      <button type="button" class="butn hvr-grow-shadow">SHOP NOW</button>
                   </div>
               </div>
             </div>
@@ -274,7 +275,7 @@
 
                       <p>The DiamondShop Lovely Necklaces collection is avaried and vibrant selection of exceptionally designed pieces adorned with the brand's renowned precision cut clear and color crystals. Our neckaces can be perfectly matched with a singular selection of earings and bracelets.</p>
 
-                      <button type="button" class="butn">READ MORE</button>
+                      <button type="button" class="butn hvr-grow-shadow">READ MORE</button>
 
                     </div>
                   </div>
@@ -300,7 +301,7 @@
 
                       <p>The DiamondShop Lovely Necklaces collection is avaried and vibrant selection of exceptionally designed pieces adorned with the brand's renowned precision cut clear and color crystals. Our neckaces can be perfectly matched with a singular selection of earings and bracelets.</p>
 
-                      <button type="button" class="butn">READ MORE</button>
+                      <button type="button" class="butn hvr-grow-shadow">READ MORE</button>
 
                     </div>
                   </div>
@@ -326,7 +327,7 @@
 
                       <p>The DiamondShop Lovely Necklaces collection is avaried and vibrant selection of exceptionally designed pieces adorned with the brand's renowned precision cut clear and color crystals. Our neckaces can be perfectly matched with a singular selection of earings and bracelets.</p>
 
-                      <button type="button" class="butn">READ MORE</button>
+                      <button type="button" class="butn hvr-grow-shadow">READ MORE</button>
 
                     </div>
                   </div>
@@ -525,7 +526,7 @@
 
                     <br>
                     <div align="center">
-                        <button type="button" class="butn">VIEW ALL</button>
+                        <button type="button" class="butn hvr-grow-shadow">VIEW ALL</button>
                     </div>
                 </div>
             </div>
@@ -618,7 +619,17 @@
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
      <script type="text/javascript" src="javascripts/javascript.js"></script>
-
+     <script type="text/javascript" src="javascripts/wow.min.js"></script>
+     <script>
+        wow = new WOW(
+        {
+          boxClass:     'wow',      // default
+          offset:       400,          // default
+          mobile:       true,       // default
+          live:         true        // default
+        })
+       wow.init();
+     </script>
      <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
      <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
      <script type="text/javascript" src="slick/slick.min.js"></script>
