@@ -220,5 +220,7 @@ $(document).ready(function(){
                 ]
           });
 
-        $('#section-logo img').addClass('animated bounceInLeft');
+        $(window).load(function() {
+            $('#section-logo img').addClass('animated bounceInLeft');
+        });
 });
