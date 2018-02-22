@@ -1,9 +1,9 @@
-
-jQuery(document).ready(function() {
-    jQuery('#load').fadeOut(2000);
-});
 $(document).ready(function(){
+        $('#load').fadeOut(600);
 
+        setTimeout(function(){
+          $('#contents').toggleClass('hidden','visible');
+        },600);
         document.load = change();
         $("#first").click(function(){
           $("#first").addClass('active');
