@@ -1,5 +1,3 @@
-
-
 $(document).ready(function(){
 
         document.load = change();
@@ -34,6 +32,10 @@ $(document).ready(function(){
           $("#slider1").addClass('hide');
           $("#slider2").addClass('hide');
           $("#slider3").removeClass('hide');
+        });
+
+        $(window).load(function(){
+          $('.loader').fadeOut();
         });
 
         
