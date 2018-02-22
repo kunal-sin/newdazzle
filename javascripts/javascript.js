@@ -1,9 +1,19 @@
 $(document).ready(function(){
-        $('#load').fadeOut(600);
+        $('#load').fadeOut(500);
 
         setTimeout(function(){
-          $('#contents').toggleClass('hidden','visible');
-        },600);
+          $('#contents').removeClass('hidden').addClass('visible');
+          wow = new WOW(
+          {
+            boxClass:     'wow',      // default
+            offset:       150,          // default
+            mobile:       true,       // default
+            live:         true        // default
+          },500)
+         wow.init();
+        });
+
+
         document.load = change();
         $("#first").click(function(){
           $("#first").addClass('active');
