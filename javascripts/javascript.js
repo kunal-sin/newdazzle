@@ -8,7 +8,7 @@ document.onreadystatechange = function () {
 
          document.getElementById('load').style.visibility="hidden";
          document.getElementById('contents').style.display="unset";
-      },1000);
+      },3000);
   }
 }
 
