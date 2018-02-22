@@ -1,17 +1,7 @@
 
-document.onreadystatechange = function () {
-  var state = document.readyState
-  if (state == 'interactive') {
-       document.getElementById('contents').style.display="none";
-  } else if (state == 'complete') {
-      setTimeout(function(){
-
-         document.getElementById('load').style.visibility="hidden";
-         document.getElementById('contents').style.display="unset";
-      },3000);
-  }
-}
-
+jQuery(document).ready(function() {
+    jQuery('#load').fadeOut(2000);
+});
 $(document).ready(function(){
 
         document.load = change();
