@@ -1,18 +1,6 @@
+
+
 $(document).ready(function(){
-        $('#load').fadeOut(500);
-
-        setTimeout(function(){
-          $('#contents').removeClass('hidden').addClass('visible');
-          wow = new WOW(
-          {
-            boxClass:     'wow',      // default
-            offset:       150,          // default
-            mobile:       true,       // default
-            live:         true        // default
-          },500)
-         wow.init();
-        });
-
 
         document.load = change();
         $("#first").click(function(){
@@ -46,10 +34,6 @@ $(document).ready(function(){
           $("#slider1").addClass('hide');
           $("#slider2").addClass('hide');
           $("#slider3").removeClass('hide');
-        });
-
-        $(window).load(function(){
-          $('.loader').fadeOut();
         });
 
         
