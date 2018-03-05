@@ -7,8 +7,8 @@ $(document).ready(function(){
           $("#first").addClass('active');
           $("#second").removeClass('active');
           $("#third").removeClass('active');
-
           $("#slider1").removeClass('hide');
+          $("#slider1").addClass('animated fadeInLeft');
           $("#slider2").addClass('hide');
           $("#slider3").addClass('hide');
 
@@ -19,9 +19,9 @@ $(document).ready(function(){
           $("#second").addClass('active');
           $("#third").removeClass('active');
 
-
           $("#slider1").addClass('hide');
           $("#slider2").removeClass('hide');
+          $("#slider2").addClass('animated fadeInUp');
           $("#slider3").addClass('hide');
         });
 
@@ -34,6 +34,7 @@ $(document).ready(function(){
           $("#slider1").addClass('hide');
           $("#slider2").addClass('hide');
           $("#slider3").removeClass('hide');
+          $("#slider3").addClass('animated fadeInRight');
         });
 
         
