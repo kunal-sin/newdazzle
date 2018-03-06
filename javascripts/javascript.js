@@ -2,7 +2,8 @@
 
 $(document).ready(function(){
 
-        $("#section-logo h3,h1").addClass('animated fadeInUp');
+        $("#section-logo").removeClass('hide');
+        $("#section-logo img,h3,h1").addClass('animated fadeInUp');
 
         document.load = change();
         $("#first").click(function(){
