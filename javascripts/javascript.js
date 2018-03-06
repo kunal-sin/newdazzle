@@ -2,6 +2,8 @@
 
 $(document).ready(function(){
 
+        $("#section-logo h3,h1").addClass('animated fadeInUp');
+
         document.load = change();
         $("#first").click(function(){
           $("#first").addClass('active');
