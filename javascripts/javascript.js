@@ -3,7 +3,7 @@
 $(document).ready(function(){
 
         $("#section-logo").removeClass('hide');
-        $("#section-logo img,h3,h1").addClass('animated fadeInUp');
+        $("#section-logo img,h3,h1").addClass('animated zoomIn');
 
         document.load = change();
         $("#first").click(function(){
@@ -11,7 +11,7 @@ $(document).ready(function(){
           $("#second").removeClass('active');
           $("#third").removeClass('active');
           $("#slider1").removeClass('hide');
-          $("#slider1 img").addClass("animated fadeIn");
+          $("#slider1 img").addClass("animated zoomIn");
           $("#slider1 h5,h1,p").addClass('animated fadeInUp');
           // $("#slider1 p").addClass('animated fadeInUp');
           $("#slider2").addClass('hide');
@@ -26,7 +26,7 @@ $(document).ready(function(){
 
           $("#slider1").addClass('hide');
           $("#slider2").removeClass('hide');
-          $("#slider2 img").addClass("animated fadeIn");
+          $("#slider2 img").addClass("animated zoomIn");
           $("#slider2 h5,h1,p").addClass('animated fadeInUp');
           $("#slider3").addClass('hide');
         });
@@ -40,7 +40,7 @@ $(document).ready(function(){
           $("#slider1").addClass('hide');
           $("#slider2").addClass('hide');
           $("#slider3").removeClass('hide');
-          $("#slider3 img").addClass("animated fadeIn");
+          $("#slider3 img").addClass("animated zoomIn");
           $("#slider3 h5,h1,p").addClass('animated fadeInUp');
         });
 
