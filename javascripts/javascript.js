@@ -11,7 +11,9 @@ $(document).ready(function(){
           $("#second").removeClass('active');
           $("#third").removeClass('active');
           $("#slider1").removeClass('hide');
-          $("#slider1").addClass('animated fadeInLeft');
+          $("#slider1 img").addClass("animated fadeIn");
+          $("#slider1 h5,h1,p").addClass('animated fadeInUp');
+          // $("#slider1 p").addClass('animated fadeInUp');
           $("#slider2").addClass('hide');
           $("#slider3").addClass('hide');
 
@@ -24,7 +26,8 @@ $(document).ready(function(){
 
           $("#slider1").addClass('hide');
           $("#slider2").removeClass('hide');
-          $("#slider2").addClass('animated fadeInUp');
+          $("#slider2 img").addClass("animated fadeIn");
+          $("#slider2 h5,h1,p").addClass('animated fadeInUp');
           $("#slider3").addClass('hide');
         });
 
@@ -37,7 +40,8 @@ $(document).ready(function(){
           $("#slider1").addClass('hide');
           $("#slider2").addClass('hide');
           $("#slider3").removeClass('hide');
-          $("#slider3").addClass('animated fadeInRight');
+          $("#slider3 img").addClass("animated fadeIn");
+          $("#slider3 h5,h1,p").addClass('animated fadeInUp');
         });
 
         
